@@ -1,0 +1,21 @@
+.About {
+    background: rgb(216, 220, 255);
+    display: grid;
+    padding: 15px;
+    grid-template: 300px / 300px minmax(400px, 1fr);
+}
+.Photo {
+    max-width: 300px;
+    min-height: 100px;
+    background: #29284e;
+    border-radius: 50%;
+    border: 1px solid #827eff;
+}
+.Info {
+    margin: 10px 20px;
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

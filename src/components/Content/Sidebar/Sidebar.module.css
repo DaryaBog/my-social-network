@@ -1,0 +1,9 @@
+.Sidebar {
+    padding: 10px;
+    grid-area: aside;
+    background: #2f425a;
+}
+.Sidebar a {
+    color: #fff;
+    font-size: 1.1rem;
+}

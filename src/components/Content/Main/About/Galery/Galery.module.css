@@ -1,0 +1,30 @@
+.Galery {
+    display: flex;
+    max-height: 100px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.Item {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    animation: galery-slider infinite 10s linear;
+}
+.Item img {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes galery-slider {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}

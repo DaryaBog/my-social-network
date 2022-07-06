@@ -1,0 +1,27 @@
+.Post {
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+    display: flex;
+}
+.Ava {
+    margin: 10px;
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.Ava img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.Text {
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+}

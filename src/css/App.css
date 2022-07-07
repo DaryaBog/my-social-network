@@ -38,3 +38,7 @@
     grid-template-areas: "aside main";
     grid-gap: 10px;
 }
+.content__main {
+    grid-area: main;
+    background: #2f425a;
+}

@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from './Galery.module.css';
 import myWork from './myWork/myWork.png';
 import myWork1 from './myWork/myWork1.png';

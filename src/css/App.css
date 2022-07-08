@@ -30,11 +30,12 @@
     /* grid-gap: 10px; */
 }
 .Content {
+    min-height: 100%;
     margin: 0 auto;
     max-width: 1200px;
     grid-area: content;
     display: grid;
-    grid-template-columns: minmax(100px, 200px) minmax(500px, 1fr);
+    grid-template-columns: minmax(100px, 200px) minmax(500px, 1000px);
     grid-template-areas: "aside main";
     grid-gap: 10px;
 }

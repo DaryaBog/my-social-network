@@ -1,4 +1,6 @@
 .item {
+    display: block;
+    color: #fff;
     height: 40px;
     padding: 5px;
     border-bottom: 1px solid rgb(48, 255, 241, 0.025);
@@ -36,6 +38,8 @@
 }
 
 .item:hover {
+    text-decoration: none;
+    color: #fff;
     background: -moz-linear-gradient(
         left,
         rgba(48, 255, 241, 0.4) 0%,

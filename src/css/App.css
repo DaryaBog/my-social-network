@@ -27,7 +27,6 @@
     grid-template-areas:
         "header"
         "content";
-    /* grid-gap: 10px; */
 }
 .Content {
     min-height: 100%;

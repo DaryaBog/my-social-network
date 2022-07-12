@@ -1,0 +1,8 @@
+.Dialogs {
+    color: #fff;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+}

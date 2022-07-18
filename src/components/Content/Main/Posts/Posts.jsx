@@ -1,14 +1,22 @@
 import React from 'react'
 import classes from './Posts.module.css';
 import Post from './Post/Post';
-const Posts = () => {
-    return <section className={classes.Posts}>
-        <Post message='Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolor.' />
-        <Post message='Lorem ipsum dolor sit amet.' />
-        <Post message='Consectetur adipisicing elit. Similique, dolor.' />
-        <Post message='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus ullam architecto enim exercitationem at sapiente cum quod! Suscipit eos, dolores natus perspiciatis nostrum similique consectetur reprehenderit inventore nesciunt laboriosam.' />
 
-    </section>
+const NewPost = () => {
+    return <div className={classes.NewPost}>
+        <textarea className={classes.text} name="post" cols="100" rows="2" placeholder='Что нового?'></textarea>
+        <button className={classes.btn + ' ' + classes.add}> Прикрепить файл </button>
+        <button className={classes.btn + ' ' + classes.pub}> Опубликовать </button>
+    </div>
+}
+
+const Posts = (props) => {
+    return (
+        <section className={classes.Posts}>
+            <NewPost />
+            {props.post.map(e => <Post message={e.message} />)}
+        </section>
+    )
 }
 
 export default Posts;

@@ -6,26 +6,15 @@ import myWork2 from './myWork/myWork2.png';
 import myWork3 from './myWork/myWork3.png';
 import myWork31 from './myWork/myWork3.1.png';
 import myWork4 from './myWork/myWork4.png';
+import WorkItem from './WorkItem/WorkItem';
 const Galery = () => {
     return <div className={classes.Galery}>
-        <div className={classes.Item}>
-            <img src={myWork} alt="work" />
-        </div>
-        <div className={classes.Item}>
-            <img src={myWork2} alt="work" />
-        </div>
-        <div className={classes.Item}>
-            <img src={myWork3} alt="work" />
-        </div>
-        <div className={classes.Item}>
-            <img src={myWork31} alt="work" />
-        </div>
-        <div className={classes.Item}>
-            <img src={myWork4} alt="work" />
-        </div>
-        <div className={classes.Item}>
-            <img src={myWork1} alt="work" />
-        </div>
+        <WorkItem img={myWork} />
+        <WorkItem img={myWork1} />
+        <WorkItem img={myWork2} />
+        <WorkItem img={myWork3} />
+        <WorkItem img={myWork31} />
+        <WorkItem img={myWork4} />
     </div>
 }
 

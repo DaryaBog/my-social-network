@@ -8,7 +8,7 @@ import Feed from './components/Content/Feed/Feed';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Dialogs from './components/Content/Dialogs/dialogs';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="App">
@@ -17,9 +17,9 @@ const App = () => {
           <Sidebar />
           <div className='content__main'>
             <Routes>
-              <Route path='/main' element={<Main />} />
+              <Route path='/main' element={<Main post={props.post} />} />
               <Route path='/feed' element={<Feed />} />
-              <Route path='/dialogs' element={<Dialogs />} />
+              <Route path='/dialogs' element={<Dialogs message={props.message} dialog={props.dialog} />} />
             </Routes>
           </div>
         </div>

@@ -3,11 +3,11 @@ import React from 'react'
 import DialogItems from './DialogItems/DialogItems'
 import Messages from './Messages/Messages'
 
-const Dialogs = () => {
+const Dialogs = (props) => {
     return (
         <div className={classes.Dialogs}>
-            <DialogItems />
-            <Messages />
+            <DialogItems dialog={props.dialog} />
+            <Messages message={props.message} />
         </div>
     )
 }

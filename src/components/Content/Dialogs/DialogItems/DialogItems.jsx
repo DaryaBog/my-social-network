@@ -5,12 +5,7 @@ import Dialog from './Dialog/Dialog'
 const DialogItem = (props) => {
     return (
         <div className={classes.DialogItems}>
-            <Dialog name="Kirill" active={true} to={1} />
-            <Dialog name="Maxim" to={2} />
-            <Dialog name="Anya" to={3} />
-            <Dialog name="Michail" to={4} />
-            <Dialog name="Olga" to={5} />
-            <Dialog name="Stes" to={6} />
+            {props.dialog.map(e => <Dialog name={e.name} active={e.active} id={e.id} />)}
         </div>
     )
 }

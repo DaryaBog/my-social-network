@@ -1,9 +1,7 @@
 .item {
-    height: 40px;
     padding: 5px;
     border-bottom: 1px solid rgb(48, 255, 241, 0.025);
     border-right: 1px solid rgba(48, 255, 241, 0.025);
-    overflow: hidden;
     cursor: pointer;
 }
 
